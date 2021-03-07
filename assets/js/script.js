@@ -43,9 +43,9 @@ const loadPokemonByName = (nombrePokemon) => {
 
 const setupPokemon = (pokemon) => {
     if(pokemon != undefined){
-        $(".estadisticas").toggle(pokemon != undefined);
-        $(".info").toggle(pokemon != undefined);
-        $(".pokemon").toggle(pokemon != undefined);
+        $(".estadisticas").toggle(true);
+        $(".info").toggle(true);
+        $(".pokemon").toggle(true);
         setupInfo(pokemon);
         setupChartEstadisticas(pokemon);
     }
