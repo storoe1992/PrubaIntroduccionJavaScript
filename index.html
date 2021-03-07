@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+         <img width="200px" src="assets/img/pokeapi_256.png">
+    </header>
+    <section class="search">
+        <div class="pokemo__selector">
+            <form class="form">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Todos tus pokemones</div>
+                    </div>
+                    <select id="selectPoke" class="form-control">
+                        <option value="">Seleccione</option>
+                    </select>
+                  </div>    
+            </form>
+        </div>
+        <div class="ml-5">
+            <form class="form-inline">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Busca tu pokemon</div>
+                    </div>
+                    <input class="form-control" id="inputPoke" type="text" />
+                    <button id="button1Poke" class="btn ml-2">Buscar</button>
+                      
+                </div>    
+            </form>
+        </div>
+    </section>
+    <main>
+        <div class="row">
+           <div class="col-lg-4">
+            <div class="info">
+                <table id="table-data-pokemon" class="table table-bordered ">
+                    <tr>
+                        <td>Nombre:</td>
+                        <td id="nombrePoke"></td>
+                    </tr>
+                    <tr>
+                        <td>Peso:</td>
+                        <td id="peso"></td>
+                    </tr>
+                    <tr>
+                        <td>Experiencia base:</td>
+                        <td id="experience"></td>
+                    </tr>
+                    <tr>
+                        <td>Hablidades:</td>
+                        <td><ul id="habilidades"></ul></td>
+                    </tr>
+                    <tr>
+                        <td>Movimientos:</td>
+                        <td><ul id="movimientos"></ul></td>
+                    </tr>
+                </table>
+            </div>
+           </div> 
+           <div class="col-lg-4 text-center">
+            <div class="pokemon">
+                <img width="80%" id="imgPokeFront" />
+            </div>
+           </div>
+           <div class="col-lg-4 text-center mt-5">
+            <div class="estadisticas">
+                <div id="chartContainer">
+                    <canvas id="pokeChart"></canvas>
+                  </div>
+                </div>
+           </div>
+        </div>
+    </main>
+    <footer>
+        <img src="assets/img/pokeapi_256.png">
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

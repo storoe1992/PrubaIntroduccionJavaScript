@@ -1,0 +1,47 @@
+
+body , body *{
+    margin: 0;
+    padding: 0;
+}
+
+#chartContainer{
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+}
+
+header {
+    height: 100px;
+    background-color: #eaeaea;
+}
+
+.pokeApiTitle{
+    text-align: right;
+    padding: 30px 20px;
+}
+
+.search{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.estadisticas,.pokemon,.info{
+    display: none;
+}
+
+#table-data-pokemon{
+    margin: 20px auto;
+    width: 350px;
+}
